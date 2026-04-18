@@ -36,6 +36,63 @@
 
 <hr>
 
+<h3 style="color:#d48a2b;">■ 점수 산정 방식</h3>
+<p>아이템 점수는 &quot;메인 옵션 점수 + 서브 옵션 점수 합계&quot; 로 계산됩니다.<br>
+각 옵션은 <strong>주요 / 유효 / 무효</strong> 세 등급으로 분류되고, 기본 점수는 다음과 같습니다:</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; margin:8px 0;">
+  <thead style="background:#f0f0f0;">
+    <tr><th>등급</th><th>메인 옵션</th><th>서브 옵션 (1롤당)</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>주요</strong></td><td><strong>6점</strong></td><td><strong>1점</strong></td><td>이 세트/주옵에서 꼭 필요한 옵션</td></tr>
+    <tr><td><strong>유효</strong></td><td><strong>3점</strong></td><td><strong>0.5점</strong></td><td>있으면 좋지만 필수 아닌 옵션</td></tr>
+    <tr><td><strong>무효</strong></td><td><strong>0점</strong></td><td><strong>0점</strong></td><td>이 세팅에서 쓸모없는 옵션</td></tr>
+  </tbody>
+</table>
+
+<p><strong>왜 이 비율인가?</strong><br>
+메인은 아이템당 1개만 붙지만, 서브는 4개 + 강화 5회로 <strong>최대 9롤</strong>까지 쌓입니다.<br>
+숫자 그대로 합쳐도 비중이 어느 한쪽에 치우치지 않도록 <strong>메인 : 서브 총합 ≈ 6 : 9</strong> 로 맞췄습니다.<br>
+(태생 4옵 풀강 기준, 메인 주요 + 서브 전부 주요 = 6 + 9 = <strong>15점 만점</strong>)</p>
+
+<p><strong>서브 점수는 60/40 가중 평균</strong><br>
+서브 옵션 한 개의 &quot;주요 / 유효 / 무효&quot; 판정은 세트와 주옵에 따라 다릅니다.</p>
+<ul>
+  <li>세트별 설정: <strong>60%</strong> 반영</li>
+  <li>주옵별 설정: <strong>40%</strong> 반영</li>
+  <li>예) 선봉장 세트 + 치명타확률 무기 + 서브 &quot;모든 공격력(%)&quot; 일 때,<br>
+    세트 기준이 주요(1점), 주옵 기준이 유효(0.5점) 이면<br>
+    → <strong>0.6 × 1 + 0.4 × 0.5 = 0.8점/롤</strong></li>
+</ul>
+
+<p><strong>산식 요약</strong></p>
+<pre style="background:#f4f4f4; padding:10px; border-radius:4px; font-family:monospace; font-size:13px;">
+메인 점수 = 설정값 (6 / 3 / 0)
+서브 점수 = (0.6 × 세트기준 + 0.4 × 주옵기준) × 롤 수
+총점     = 메인 + Σ(서브)
+비율     = 총점 / 만점</pre>
+
+<p>만점은 <strong>태생 4옵 풀강 기준</strong>으로 &quot;메인 주요 + 상위 4개 서브 1롤씩 + 강화 5롤 전부 최고 서브에 몰빵&quot; 한 이론값입니다.<br>
+등급은 비율 기준:</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; margin:8px 0;">
+  <thead style="background:#f0f0f0;">
+    <tr><th>등급</th><th>비율</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>S+</strong></td><td>95% ↑</td><td>만점에 가까움</td></tr>
+    <tr><td><strong>S</strong></td><td>90% ↑</td><td>최상급</td></tr>
+    <tr><td><strong>A</strong></td><td>75% ↑</td><td>상급</td></tr>
+    <tr><td><strong>B</strong></td><td>60% ↑</td><td>중상급, 보통 유지</td></tr>
+    <tr><td><strong>C</strong></td><td>45% ↑</td><td>어중간, 초기화 고려</td></tr>
+    <tr><td><strong>D</strong></td><td>30% ↑</td><td>폐기권</td></tr>
+    <tr><td><strong>F</strong></td><td>30% 미만</td><td>폐기</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
 <h3 style="color:#d48a2b;">■ 점수 규칙 직접 설정 가능</h3>
 <p>제 기준이 아니라 <strong>본인 기준으로 수정</strong>할 수 있습니다.</p>
 
