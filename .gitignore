@@ -1,0 +1,14 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+.claude/
+*.swp
+
+# Binaries (uploaded via GitHub Releases, not committed)
+*.exe
+*.zip
