@@ -8,11 +8,11 @@
 
 ## 다운로드
 
-**[⬇ 최신 버전 다운로드 (v2.3.0)](https://github.com/flyup82/Rebirth-Item-Analyzer-public/releases/latest)**
+**[⬇ 최신 버전 다운로드 (v2.4.8)](https://github.com/flyup82/Rebirth-Item-Analyzer-public/releases/latest)**
 
 | 파일 | 크기 | SHA256 |
 |---|---|---|
-| `SenaItemAnalyzer.exe` | 약 26 MB | `0d6658a1bcf8ff6ff2042aa25d23b373f7b1c9294a86bc79a21c40639b16e7b4` |
+| `SenaItemAnalyzer.exe` | 약 27 MB | `ce03486faddea35d15fa911576f2eecb3ad78f961110da9ba4b43c2712757893` |
 
 백신 오탐(false positive)이 나면 위 해시로 파일 무결성을 확인하시기 바랍니다.
 
@@ -58,7 +58,7 @@
 ### 4. 고정확도 OCR
 - Windows 내장 OCR(winocr) 2x 업스케일 + 대비/샤프닝 전처리
 - 한국어 오인식 3단계 보정 (글자 → 기호 → 세트명)
-- 내부 회귀 테스트셋 기준 **인식 정확도 99.5% 이상** (1054장 중 완벽 일치 1053장)
+- 내부 회귀 테스트셋 기준 **인식 정확도 99.7% 이상** (1,477장 중 완벽 일치 1,472장)
 
 ## 자주 묻는 질문
 
